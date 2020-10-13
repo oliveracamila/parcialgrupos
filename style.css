@@ -14,14 +14,23 @@
 }
 body {
   background-color: #fcece1;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Tajawal', sans-serif;
   width: 100%;
   overflow-x: hidden;
+}
+/* Cabecera */
+.cabecera .overlay {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(230,230,230,0.3);
+  border-radius: 0 0 50% 0;
 }
 /* Navegador */
 nav {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 nav ul {
   display: flex;
@@ -56,6 +65,7 @@ nav ul li a:hover {
   max-width: 1100px;
   margin: 0 auto;
   font-family: 'Ubuntu', sans-serif;
+  padding: 0 20px;
 }
 #caratula {
   display: flex;
@@ -108,8 +118,23 @@ nav ul li a:hover {
 .alumnes ul {
   list-style: none;
 }
+/* Chat */
+.chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Primera Seccion */
+.link {
+  font-family: 'Charmonman', cursive;
+  font-size: 30px;
+  color: maroon;
+}
+.hipervinculo {
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
+}
 #seccion1 {
   width: 100%;
   height: auto;
@@ -146,16 +171,121 @@ nav ul li a:hover {
   list-style: none;
 }
 /* Propagandas */
-#propagandas {
+.propagandas {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.propagandas .cartelito {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  min-height: 30vh;
+  min-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 5px #555;
+  animation: titilar 1s ease-in infinite;
+  transition: all 0.6s;
+  visibility: hidden;
+  opacity: 0;
+}
+.prop-activas .cartelito {
+  transition-delay: 0.6s;
+  visibility: visible;
+  opacity: 1;
+}
+@keyframes titilar {
+  0% {
+    background: white;
+    min-height: 30vh;
+    min-width: 50vw;
+  }
+  50% {
+    background: #ddd;
+    min-height: 31vh;
+    min-width: 51vw;
+  }
+  100% {
+    background: white;
+    min-height: 30vh;
+    min-width: 50vw;
+  }
+}
+.propagandas .cartelito p{
+  font-size: 20px;
+}
+.propagandas .cartelito button {
+  padding: 15px;
+  outline: none;
+  border: none;
+  background: green;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.propagandas img {
+  transition: all 0.5s;
+}
+.propagandas .virus {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 0%;
+  left: 10%;
+}
+.propagandas .download {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 0%;
+  right: 0%;
+}
+.propagandas .kimkardashian {
+  position: absolute;
+  width: auto;
+  height: 30%;
+  bottom: 0%;
+  right: 0%;
+}
+.propagandas .error {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  bottom: 0%;
+  left: 15%;
+}
+.propagandas .ganaste {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+.propagandas .congratulations {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 5%;
+  left: 0%;
+}
+.prop-activas {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
 }
-#propagandas .virus {
+.prop-activas .virus {
   position: absolute;
   width: 40%;
   height: auto;
@@ -163,35 +293,35 @@ nav ul li a:hover {
   left: 40%;
 }
 
-#propagandas .download {
+.prop-activas .download {
   position: absolute;
   width: 20%;
   height: auto;
   top: 20%;
   right: 10%;
 }
-#propagandas .kimkardashian {
+.prop-activas .kimkardashian {
   position: absolute;
   width: auto;
   height: 30%;
   bottom: 5%;
   right: 5%;
 }
-#propagandas .error {
+.prop-activas .error {
   position: absolute;
   width: 20%;
   height: auto;
   bottom: 5%;
   left: 45%;
 }
-#propagandas .ganaste {
+.prop-activas .ganaste {
   position: absolute;
   width: 20%;
   height: auto;
   top: 0;
   left: 0;
 }
-#propagandas .congratulations {
+.prop-activas .congratulations {
   position: absolute;
   width: 30%;
   height: auto;
