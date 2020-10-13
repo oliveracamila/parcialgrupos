@@ -4,6 +4,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+p {
+  line-height: 30px;
+}
 @font-face {
   font-family: "mangosalsa";
   src: url(font/mangosalsa.ttf);
@@ -129,7 +132,6 @@ nav ul li a:hover {
 .link {
   font-family: 'Charmonman', cursive;
   font-size: 30px;
-  color: maroon;
 }
 .hipervinculo {
   font-family: 'Staatliches', cursive;
@@ -154,6 +156,70 @@ nav ul li a:hover {
 }
 #seccion1 .cuerpos p {
   margin-top: 20px;
+}
+.uno {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 30%;
+  position: relative;
+  margin-top: 20px;
+}
+.uno img {
+  width: 50% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  right: 73%;
+}
+.uno p {
+  margin-top: 0 !important;
+}
+.dos {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 15%;
+  position: relative;
+  margin-top: 20px;
+}
+.dos img {
+  width: 40% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 73%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.dos p {
+  margin-top: 0 !important;
+}
+.p {
+  background-color: rgba(255, 68, 0, 0.671);
+  border-radius: 4px;
+  padding: 7px;
+
+}
+.ultima {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 15%;
+  position: relative;
+  margin-top: 20px;
+}
+.ultima img {
+  width: 50% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  right: 73%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.ultima p {
+  margin-top: 0 !important;
 }
 
 /* Bibliografía */
