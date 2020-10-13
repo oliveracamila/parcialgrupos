@@ -15,20 +15,17 @@ p {
   font-family: "joy";
   src: url(font/joy.ttf);
 }
+@font-face {
+  font-family: "sushi";
+  src: url(font/Sushi\ King\ -Personal\ Use.otf);
+}
 body {
-  background-color: #fcece1;
+  background-color:rgb(235,196,151);
   font-family: 'Tajawal', sans-serif;
   width: 100%;
   overflow-x: hidden;
 }
-/* Cabecera */
-.cabecera .overlay {
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
-  background: rgba(230,230,230,0.3);
-  border-radius: 0 0 50% 0;
-}
+
 /* Navegador */
 nav {
   max-width: 1100px;
@@ -52,7 +49,7 @@ nav ul li a {
   transition: all 0.5s;
 }
 nav ul li a:hover {
-  color: rgb(144, 84, 122);
+  color: rgb(247, 149, 234);
 }
 
 /* Caratula */
@@ -121,21 +118,36 @@ nav ul li a:hover {
 .alumnes ul {
   list-style: none;
 }
+
 /* Chat */
 .chat {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.chat img {
+  box-shadow: 1px 1px 10px #555;
+  border-radius: 4px;
+}
 
 /* Primera Seccion */
 .link {
-  font-family: 'Charmonman', cursive;
-  font-size: 30px;
+  font-family: "sushi";
+  font-size: 3em;
+}
+.link:hover {
+  color: rgb(81, 160, 212);
 }
 .hipervinculo {
-  font-family: 'Staatliches', cursive;
-  font-size: 25px;
+  font-family: "joy";
+  font-size: 2em;
+}
+.hipervinculo:hover {
+  color: rgb(255, 94, 0);
+  
+}
+.seccion {
+  text-align: center;
 }
 #seccion1 {
   width: 100%;
@@ -148,7 +160,6 @@ nav ul li a:hover {
 #seccion1 img {
   width: 40%;
   height: auto;
- 
 }
 #seccion1 .cuerpos {
   width: 80%;
@@ -165,12 +176,12 @@ nav ul li a:hover {
   position: relative;
   margin-top: 20px;
 }
-.uno img {
+.uno #teclado {
   width: 50% !important;
-  height: 100% !important;
+  height: 80% !important;
   position: absolute;
   top: 0;
-  right: 73%;
+  right: 75%;
 }
 .uno p {
   margin-top: 0 !important;
@@ -196,10 +207,21 @@ nav ul li a:hover {
   margin-top: 0 !important;
 }
 .p {
-  background-color: rgba(255, 68, 0, 0.671);
+  position: relative; 
+  right: 20%;
+  background-color: rgba(255, 68, 0, 0.87);
   border-radius: 4px;
   padding: 7px;
 
+}
+.cuadrado {
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  left: 40%;
+  background-color: rgb(86,98,171);
+  border-radius: 50%;
+  z-index: -1;
 }
 .ultima {
   display: flex;
@@ -221,6 +243,20 @@ nav ul li a:hover {
 .ultima p {
   margin-top: 0 !important;
 }
+.ultimoultimo {
+  display: flex;
+  width: 100%;
+  padding-right: 5%;
+  position: relative;
+  margin-top: 20px;
+}
+.ultimoultimo .img {
+  width: auto;
+  height: 500px;
+  position: absolute;
+  left: 70%;
+  z-index: -1;
+}
 
 /* Bibliografía */
 .bibliografia {
@@ -236,6 +272,7 @@ nav ul li a:hover {
 .bibliografia ul {
   list-style: none;
 }
+
 /* Propagandas */
 .propagandas {
   visibility: hidden;
