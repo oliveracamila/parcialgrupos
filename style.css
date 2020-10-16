@@ -132,6 +132,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .chat video {
   box-shadow: 1px 1px 10px #555;
@@ -139,6 +140,14 @@ nav ul li a:hover {
   width: auto;
   height: 95vh;
   margin-bottom: 50px;
+}
+.chat .chatfoto {
+  width: auto !important;
+  height: 100% !important;
+  position: absolute;
+  top: -15%;
+  right: -15%;
+
 }
 
 /* Primera Seccion */
@@ -179,6 +188,12 @@ nav ul li a:hover {
 #seccion1 .cuerpos p {
   margin-top: 20px;
 }
+.cuerpos #primerparrafo {
+  background-color: rgb(45, 167, 248);
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px #555;
+}
 .uno {
   display: flex;
   align-items: center;
@@ -189,7 +204,7 @@ nav ul li a:hover {
 }
 .uno #teclado {
   width: 50% !important;
-  height: 70% !important;
+  height: 600px !important;
   position: absolute;
   top: 0;
   right: 75%;
@@ -198,6 +213,19 @@ nav ul li a:hover {
 .uno p {
   margin-top: 0 !important;
 }
+.medio {
+  position: relative;
+}
+.medio img {
+  width: auto !important;
+  height: 500px !important;
+  position: absolute;
+  top: -15%;
+  left: 35%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
 .dos {
   display: flex;
   align-items: center;
@@ -277,11 +305,20 @@ nav ul li a:hover {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
-  box-shadow: 1px 1px 1px 1px #666;
+  box-shadow: 1px 1px 5px 1px #666;
   border-radius: 4px;
   margin-bottom: 50px;
+  background-color: rgb(241, 63, 152);
+}
+.bibliografia h1 {
+  font-family: "joy";
+  font-size: 2em;
+}
+.bibliografia h1:hover {
+  color: rgb(81, 160, 212);
 }
 .bibliografia ul {
+  line-height: 30px;
   list-style: none;
 }
 
