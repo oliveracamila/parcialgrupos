@@ -1,0 +1,482 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+p {
+  line-height: 30px;
+}
+@font-face {
+  font-family: "mangosalsa";
+  src: url(font/mangosalsa.ttf);
+}
+@font-face {
+  font-family: "joy";
+  src: url(font/joy.ttf);
+}
+@font-face {
+  font-family: "sushi";
+  src: url(font/Sushi\ King\ -Personal\ Use.otf);
+}
+body {
+  background-color:rgb(235,196,151);
+  font-family: 'Tajawal', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navegador */
+nav {
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(61, 228, 205);
+  display: none;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  height: 60px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+nav ul li {
+  padding-left: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  font-size: 20px;
+  transition: all 0.5s;
+  font-family: Tahoma;
+}
+nav ul li a:hover {
+  color: rgb(247, 149, 234);
+}
+
+/* Caratula */
+.cabecera {
+  background-image: url(img/cerebro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  border-radius: 0 0 50% 0;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0 20px;
+}
+#caratula {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#caratula img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+}
+#caratula .caratula-facultad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(27, 27, 27) e;
+}
+.caratula-facultad h1 {
+  font-family: "mangosalsa";
+  font-size: 4em;
+}
+.caratula-facultad h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3em;
+}
+.datos-materia {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  font-weight: bold;
+}
+.catedra {
+  width: 60%;
+  max-height: 300px;
+  color: rgb(27, 27, 27);
+  margin-top: 50px;
+}
+.catedra ul {
+  list-style: none;
+  margin-top: 50px;
+}
+.alumnes {
+  width: 20%;
+  color: rgb(27, 27, 27);
+  margin-top: 150px;
+  margin-left: 30%;
+}
+.alumnes ul {
+  list-style: none;
+}
+
+/* Chat */
+.chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.chat video {
+  box-shadow: 1px 1px 10px #555;
+  border-radius: 4px;
+  width: auto;
+  height: 95vh;
+  margin-bottom: 50px;
+}
+.chat .chatfoto {
+  width: auto !important;
+  height: 100% !important;
+  position: absolute;
+  top: -15%;
+  right: -15%;
+
+}
+
+/* Primera Seccion */
+.link {
+  font-family: "sushi";
+  font-size: 3em;
+}
+.link:hover {
+  color: rgb(81, 160, 212);
+}
+.hipervinculo {
+  font-family: "joy";
+  font-size: 2em;
+}
+.hipervinculo:hover {
+  color: rgb(255, 94, 0);
+  
+}
+.seccion {
+  text-align: center;
+}
+#seccion1 {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-around; 
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+#seccion1 img {
+  width: 40%;
+  height: auto;
+}
+#seccion1 .cuerpos {
+  width: 80%;
+  font-size: 20px;
+}
+#seccion1 .cuerpos p {
+  margin-top: 20px;
+}
+.cuerpos #primerparrafo {
+  background-color: rgb(45, 167, 248);
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px #555;
+}
+.uno {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 30%;
+  position: relative;
+  margin-top: 20px;
+}
+.uno #teclado {
+  width: 50% !important;
+  height: 600px !important;
+  position: absolute;
+  top: 0;
+  right: 75%;
+  border-radius: 5px;
+}
+.uno p {
+  margin-top: 0 !important;
+}
+.medio {
+  position: relative;
+}
+.medio img {
+  width: auto !important;
+  height: 500px !important;
+  position: absolute;
+  top: -15%;
+  left: 35%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.dos {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 15%;
+  position: relative;
+  margin-top: 20px;
+}
+.dos img {
+  width: 40% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 73%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.dos p {
+  margin-top: 0 !important;
+}
+.p {
+  position: relative; 
+  right: 20%;
+  background-color: rgba(255, 68, 0, 0.87);
+  border-radius: 4px;
+  padding: 7px;
+
+}
+.cuadrado {
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  left: 40%;
+  background-color: rgb(86,98,171);
+  border-radius: 50%;
+  z-index: -1;
+}
+.ultima {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 15%;
+  position: relative;
+  margin-top: 20px;
+}
+.ultima img {
+  width: 50% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  right: 73%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.ultima p {
+  margin-top: 0 !important;
+}
+.ultimoultimo {
+  display: flex;
+  width: 100%;
+  padding-right: 5%;
+  position: relative;
+  margin-top: 20px;
+}
+.ultimoultimo .img {
+  width: auto;
+  height: 500px;
+  position: absolute;
+  left: 70%;
+  z-index: -1;
+}
+
+/* Bibliografía */
+.bibliografia {
+  margin-top: 50px;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  box-shadow: 1px 1px 5px 1px #666;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  background-color: rgb(241, 63, 152);
+}
+.bibliografia h1 {
+  font-family: "joy";
+  font-size: 2em;
+}
+.bibliografia h1:hover {
+  color: rgb(81, 160, 212);
+}
+.bibliografia ul {
+  line-height: 30px;
+  list-style: none;
+}
+
+/* Propagandas */
+.propagandas {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.propagandas .cartelito {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  min-height: 30vh;
+  min-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 5px #555;
+  animation: titilar 1s ease-in infinite;
+  transition: all 0.6s;
+  visibility: hidden;
+  opacity: 0;
+}
+.prop-activas .cartelito {
+  transition-delay: 0.6s;
+  visibility: visible;
+  opacity: 1;
+}
+@keyframes titilar {
+  0% {
+    background: white;
+    min-height: 30vh;
+    min-width: 50vw;
+  }
+  50% {
+    background: #ddd;
+    min-height: 31vh;
+    min-width: 51vw;
+  }
+  100% {
+    background: white;
+    min-height: 30vh;
+    min-width: 50vw;
+  }
+}
+.propagandas .cartelito p{
+  font-size: 20px;
+}
+.propagandas .cartelito button {
+  padding: 15px;
+  outline: none;
+  border: none;
+  background: green;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.propagandas img {
+  transition: all 0.5s;
+}
+.propagandas .virus {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 0%;
+  left: 10%;
+}
+.propagandas .download {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 0%;
+  right: 0%;
+}
+.propagandas .kimkardashian {
+  position: absolute;
+  width: auto;
+  height: 30%;
+  bottom: 0%;
+  right: 0%;
+}
+.propagandas .error {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  bottom: 0%;
+  left: 15%;
+}
+.propagandas .ganaste {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+.propagandas .congratulations {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 5%;
+  left: 0%;
+}
+.prop-activas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+.prop-activas .virus {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 10%;
+  left: 40%;
+}
+
+.prop-activas .download {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 20%;
+  right: 10%;
+}
+.prop-activas .kimkardashian {
+  position: absolute;
+  width: auto;
+  height: 30%;
+  bottom: 5%;
+  right: 5%;
+}
+.prop-activas .error {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  bottom: 5%;
+  left: 45%;
+}
+.prop-activas .ganaste {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+.prop-activas .congratulations {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 35%;
+  left: 5%;
+}
